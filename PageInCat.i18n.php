@@ -51,6 +51,13 @@ $messages['hsb'] = array(
 	'pageincat-desc' => 'Přidawa parserowu funkciju <code><nowiki>{{#incat...}}</nowiki></code>, zo by zwěsćiło, hač aktualna strona je w podatej kategoriji',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'pageincat-desc' => 'Setzt eng Parserfonctioun  <code><nowiki>{{#incat:...}}</nowiki></code> derbäi fir festzestellen ob déi aktuell Säit an enger spezifescher Kategorie dran ass',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */

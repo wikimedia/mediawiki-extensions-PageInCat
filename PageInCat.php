@@ -31,7 +31,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'PageInCat',
 	'descriptionmsg' => 'pageincat-desc',
-	'version' => 1,
+	'version' => 1.1,
 	'url' => 'https://mediawiki.org/wiki/Extension:PageInCat',
 	'author' => '[https://mediawiki.org/wiki/User:Bawolff Brian Wolff]',
 );
@@ -44,4 +44,5 @@ $wgExtensionMessagesFiles['PageInCatMagic'] = $dir . 'PageInCat.i18n.magic.php';
 $wgAutoloadClasses['PageInCat'] = $dir . 'PageInCat_body.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'PageInCat::register';
-$wgHooks['ParserClearState'][] = 'PageInCat::clearState';
+$wgHooks['ParserClearState'][] = 'PageInCat::onClearState';
+$wgHooks['ParserAfterTidy'][] = 'PageInCat::onParserAfterTidy';

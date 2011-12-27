@@ -26,7 +26,7 @@ class PageInCat {
 	public static function render( $parser, $frame, $args ) {
 		$catText = isset( $args[0] ) ? trim( $frame->expand( $args[0] ) ) : '';
 
-		// Must specify that content varries with what gets inserted in db on save.
+		// Must specify that content varies with what gets inserted in db on save.
 		$parser->getOutput()->setFlag( 'vary-revision' );
 
 		if ( self::inCat( $parser->getTitle(), $catText, $parser ) ) {
@@ -93,7 +93,7 @@ class PageInCat {
 	}
 
 	/**
-	 * Actually chech it in DB.
+	 * Actually check it in DB.
 	 * @param $pageId int page_id of current page (Already verified to not be 0)
 	 * @param $catDBkey String the db key of category we're checking.
 	 * @return boolean if the current page belongs to the category.
@@ -154,6 +154,7 @@ class PageInCat {
 			return true;
 		}
 
+		wfProfileIn( __METHOD__ . '-actual' );
 		$actualCategories = $parser->getOutput()->getCategories();
 		$wrongCategories = array();
 
@@ -201,6 +202,7 @@ class PageInCat {
 
 			$parser->getOutput()->addWarning( $msg );
 		}
+		wfProfileOut( __METHOD__ . '-actual' );
 
 		return true;
 	}
@@ -284,7 +286,7 @@ class PageInCat {
 
 		if ( !isset( self::$categoriesForPreview[$hash] ) ) {
 			# This probably shouldn't happen
-			wfDebug( __METHOD__ . ' Could not find relavent cat list.' );
+			wfDebug( __METHOD__ . ' Could not find relevant cat list.' );
 			return true;
 		}
 

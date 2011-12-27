@@ -11,11 +11,16 @@ $messages = array();
 $messages['en'] = array(
 	'pageincat-desc' => 'Adds a parser function <code><nowiki>{{#incat:...}}</nowiki></code> to determine if the current page is in a specified category',
 	'pageincat-wrong-warn' => '\'\'\'Warning:\'\'\' The {{PLURAL:$2|category $1 was|categories $1 were}} detected incorrectly by <code><nowiki>{{#incat:...}}</nowiki></code>, and as a result this preview may be incorrect. The saved version of this page should be displayed in the correct manner.',
+	'pageincat-very-wrong-warn' => '\'\'\'Warning:\'\'\' The {{PLURAL:$2|category $1 was|categories $1 were}} detected incorrectly by <code><nowiki>{{#incat:...}}</nowiki></code>, and as a result this preview may be incorrect. This can be caused by including categories inside of <code><nowiki>{{#incat:...}}</nowiki></code> statements, and may result in inconsistant display.',
 );
 
 /** Message documentation (Message documentation) */
 $messages['qqq'] = array(
-	'pageincat-wrong-warn' => 'Warning displayed during preview when editing a page if #incat parser function acted incorrectly (Acting incorrectly means acting as if page was not in category, but page actually is) . This can happen during preview, since the categories from the last saved revision are used instead of the categories specified in the page text. Once page is saved, the correct categories should be used. This error can also be caused by conditional category inclusion (<code><nowiki>{{#ifpageincat:Foo||[[category:Foo]]}}</nowiki></code>
+	'pageincat-wrong-warn' => 'Warning displayed during preview when editing a page if #incat parser function acted incorrectly (Acting incorrectly means acting as if page was not in category, but page actually is). This can happen during preview, since the categories from the last saved revision are used instead of the categories specified in the page text. Once page is saved, the correct categories should be used. This error can also be caused by conditional category inclusion (<code><nowiki>{{#ifpageincat:Foo||[[category:Foo]]}}</nowiki></code>. See also {{msg-mw|pageincat-very-wrong-warn}}.
+
+*$1 is the list of categories (in a localized comma seperated list with the last two items separated by {{msg-mw|and}}. The individual category names will be italicized).
+*$2 is how many categories',
+	'pageincat-very-wrong-warn' => 'Warning displayed during preview when editing a page if #incat parser function acted incorrectly (Acting incorrectly means acting as if page was not in category, but page actually is) . This can happen if someone does something like \'\'put this page in category foo only if its not in category foo\'\' or more generally when people include category links inside <code>#incat</code> functions. Compare this to {{msg-mw|pageincat-wrong-warn}}. Generally this error message can happen when support for checking actual categories in the preview is enabled (but the category functions still behave incorrectly), the other error message will be triggered when such support is disabled.
 
 *$1 is the list of categories (in a localized comma seperated list with the last two items separated by {{msg-mw|and}}. The individual category names will be italicized).
 *$2 is how many categories',

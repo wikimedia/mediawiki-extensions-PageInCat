@@ -1,7 +1,7 @@
 <?php
 /**
  * Extension to add parserfunction {{#incat:foo|yes|no}}
- * Note, this might give wrong results on preview, but should work once page is saved.
+ *
  * @author Brian Wolff <bawolff+ext _at_ gmail _dot_ com>
  *
  * Copyright © Brian Wolff 2011.
@@ -31,7 +31,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'PageInCat',
 	'descriptionmsg' => 'pageincat-desc',
-	'version' => 1.1,
+	'version' => 2,
 	'url' => 'https://mediawiki.org/wiki/Extension:PageInCat',
 	'author' => '[https://mediawiki.org/wiki/User:Bawolff Brian Wolff]',
 );
@@ -46,3 +46,10 @@ $wgAutoloadClasses['PageInCat'] = $dir . 'PageInCat_body.php';
 $wgHooks['ParserFirstCallInit'][] = 'PageInCat::register';
 $wgHooks['ParserClearState'][] = 'PageInCat::onClearState';
 $wgHooks['ParserAfterTidy'][] = 'PageInCat::onParserAfterTidy';
+$wgHooks['EditPageGetPreviewText'][] = 'PageInCat::onEditPageGetPreviewText';
+$wgHooks['ParserBeforeInternalParse'][] = 'PageInCat::onParserBeforeInternalParse';
+
+# Double parse previews so that #incat: uses the categories
+# in the edit box, instead of from the previous version of the page.
+# A bit hacky, and will double the time it takes to render a preview.
+$wgPageInCatUseAccuratePreview = true;

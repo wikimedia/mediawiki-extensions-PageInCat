@@ -89,9 +89,12 @@ $messages['mk'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author SPQRobin
  * @author Siebrand
  */
 $messages['nl'] = array(
 	'pageincat-desc' => 'Voegt de parserfunctie <code><nowiki>{{#incat:...}}</nowiki></code> toe om te bepalen of de huidige pagina in een bepaalde categorie valt',
+	'pageincat-wrong-warn' => "'''Waarschuwing:''' De {{PLURAL:$2|categorie $1 is|categorieën $1 zijn}} onjuist gedetecteerd door <code><nowiki>{{#incat:...}}</nowiki></code>, en als gevolg daarvan kan deze voorvertoning onjuist zijn. De opgeslagen versie van deze pagina zou op de juiste manier weergegeven moeten worden.",
+	'pageincat-very-wrong-warn' => "'''Waarschuwing:''' De {{PLURAL:$2|categorie $1 is|categorieën $1 zijn}} onjuist gedetecteerd door <code><nowiki>{{#incat:...}}</nowiki></code>, en als gevolg daarvan kan deze voorvertoning onjuist zijn. Dit kan veroorzaakt worden door categorieën toe te voegen binnen <code><nowiki>{{#incat:...}}</nowiki></code> , en kan leiden tot inconsistente weergave.",
 );
 

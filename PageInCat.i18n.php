@@ -71,6 +71,15 @@ $messages['hsb'] = array(
 	'pageincat-very-wrong-warn' => "'''Warnowanje:''' {{PLURAL:$2|Kategorija $1 je|Kategoriji $1 stej|Kategorije $1 su|Kategorije $1 su}} so přez <code><nowiki>{{#incat:...}}</nowiki></code> wopak {{PLURAL:$2|spóznała|spóznałoj|spóznali|spóznali}}, a tohodla móhł přehlad wopak być. Přičina móhła być, zo su so kategorije do wurazow <code><nowiki>{{#incat:...}}</nowiki></code> zapřijeli, štož móhło k inkonsistentnemu zwobraznjenju wjesć.",
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'pageincat-desc' => 'Adde al analysator syntactic un function <code><nowiki>{{#incat:...}}</nowiki></code> pro determinar si le pagina actual es in un categoria specificate',
+	'pageincat-wrong-warn' => "'''Attention:''' Le {{PLURAL:$2|categoria|categorias}} $1 esseva detegite incorrectemente per <code><nowiki>{{#incat:...}}</nowiki></code>, e como resultato, iste previsualisation pote esser incorrecte. Le version salveguardate de iste pagina deberea esser presentate in le maniera correcte.",
+	'pageincat-very-wrong-warn' => "'''Attention:''' Le {{PLURAL:$2|categoria|categorias}} $1 esseva detegite incorrectemente per <code><nowiki>{{#incat:...}}</nowiki></code>, e como resultato, iste previsualisation pote esser incorrecte. Isto pote esser causate per includer categorias intra commandos <code><nowiki>{{#incat:...}}</nowiki></code>, e pote resultar in un presentation inconsistente.",
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */

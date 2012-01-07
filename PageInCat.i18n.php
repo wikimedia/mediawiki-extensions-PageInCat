@@ -107,3 +107,12 @@ $messages['nl'] = array(
 	'pageincat-very-wrong-warn' => "'''Waarschuwing:''' De {{PLURAL:$2|categorie $1 is|categorieën $1 zijn}} onjuist gedetecteerd door <code><nowiki>{{#incat:...}}</nowiki></code>, en als gevolg daarvan kan deze voorvertoning onjuist zijn. Dit kan veroorzaakt worden door categorieën toe te voegen binnen <code><nowiki>{{#incat:...}}</nowiki></code> , en kan leiden tot inconsistente weergave.",
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'pageincat-desc' => "A gionta na funsion dël parser <code><nowiki>{{#incat:...}}</nowiki></code> për determiné se la pagina corenta a l'é ant na categorìa specificà",
+	'pageincat-wrong-warn' => "'''Avis:''' La {{PLURAL:$2|categorìa $1 a l'era|categorìe $1 a l'ero}} andicà pa giuste da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà sta preuva a peul esse pa giusta. La vërsion salvà dë sta pagina a dovrìa esse mostà ant la manera giusta.",
+	'pageincat-very-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'era|Le categorìe $1 a l'ero}} andicà pa giuste da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà sta preuva a esse pa giusta. Sòn-sì a peul esse causà da l'anclude le categorìe an drinta a l'istrussion <code><nowiki>{{#incat:...}}</nowiki></code>, e a peu dé na visualisassion pa consistenta.",
+);
+

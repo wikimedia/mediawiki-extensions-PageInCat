@@ -108,11 +108,12 @@ $messages['nl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'pageincat-desc' => "A gionta na funsion dël parser <code><nowiki>{{#incat:...}}</nowiki></code> për determiné se la pagina corenta a l'é ant na categorìa specificà",
-	'pageincat-wrong-warn' => "'''Avis:''' La {{PLURAL:$2|categorìa $1 a l'era|categorìe $1 a l'ero}} andicà pa giuste da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà sta preuva a peul esse pa giusta. La vërsion salvà dë sta pagina a dovrìa esse mostà ant la manera giusta.",
-	'pageincat-very-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'era|Le categorìe $1 a l'ero}} andicà pa giuste da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà sta preuva a esse pa giusta. Sòn-sì a peul esse causà da l'anclude le categorìe an drinta a l'istrussion <code><nowiki>{{#incat:...}}</nowiki></code>, e a peu dé na visualisassion pa consistenta.",
+	'pageincat-desc' => "A gionta na funsion ëd l'analisator <code><nowiki>{{#incat:...}}</nowiki></code> për determiné se la pàgina corenta a l'é ant na categorìa spessificà",
+	'pageincat-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'é nen ëstàita|Le categorìe $1 a j'ero nen ëstàite}} andividuà për da bin da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà sta preuva a podrìa esse cioca. La version salvà ëd costa pàgina a dovrìa esse visualisà ant la manera giusta.",
+	'pageincat-very-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'é ne ëstàita|Le categorìe $1 a son nen ëstàite}} andividuà për da bin da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà costa previsualisassion a podrìa esse cioca. Sòn a peul esse causà da l'anclusion ëd le categorìe andrinta a l'istrussion <code><nowiki>{{#incat:...}}</nowiki></code>, e a peul arzulté an na visualisassion incoerenta.",
 );
 

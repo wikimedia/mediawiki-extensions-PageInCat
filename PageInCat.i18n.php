@@ -26,6 +26,15 @@ $messages['qqq'] = array(
 *$2 is how many categories",
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'pageincat-desc' => 'Дадае функцыю парсэра <code><nowiki>{{#incat:...}}</nowiki></code> для вызначэньня прыналежнасьці бягучай старонкі да пэўнай катэгорыі',
+	'pageincat-wrong-warn' => "'''Увага:''' функцыяй <code><nowiki>{{#incat:...}}</nowiki> {{PLURAL:$2|катэгорыя «$1» была вызначаная|катэгорыі $1 былі вызначаныя}} некарэктна, таму папярэдні прагляд можа быць няправільным. Захаваная вэрсія старонкі мусіць адлюстроўвацца правільна.",
+	'pageincat-very-wrong-warn' => "'''Увага:''' функцыяй <code><nowiki>{{#incat:...}}</nowiki> {{PLURAL:$2|катэгорыя «$1» была вызначаная|катэгорыі $1 былі вызначаныя}} некарэктна, таму папярэдні прагляд можа быць няправільным. Гэта магло быць выклікана ўключэньнем катэгорыяў унутры <code><nowiki>{{#incat:...}}</nowiki></code>, што магло выліцца ў няправільнае адлюстраваньне.",
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64

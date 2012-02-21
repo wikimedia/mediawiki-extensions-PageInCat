@@ -96,6 +96,7 @@ $messages['ia'] = array(
 $messages['lb'] = array(
 	'pageincat-desc' => 'Setzt eng Parserfonctioun  <code><nowiki>{{#incat:...}}</nowiki></code> derbäi fir festzestellen ob déi aktuell Säit an enger spezifescher Kategorie dran ass',
 	'pageincat-wrong-warn' => "'''Opgepasst:''' D'{{PLURAL:$2|Kategorie $1 gouf|Kategorien $1 goufen}} net korrekt duerch <code><nowiki>{{#incat:...}}</nowiki></code> erkannt, an doduerch kann dës net-gespäichert Versioun vun der Säit net korrekt sinn. Déi gespäichert Versioun vun dëser Säit misst richteg gewise ginn.",
+	'pageincat-very-wrong-warn' => "'''Opgepasst:''' D'{{PLURAL:$2|Kategorie $1 gouf|Kategorie(n) $1 goufen}} duerch <code>#incat:</code> falsch erkannt. Dofir kann dat wat hei drënner gewise gëtt falsch sinn. Dat kann doduer kommen datt Kategorien an d'Funktion <code><nowiki>{{#incat:...}}</nowiki></code> dragesat goufen an dat kann dozou féieren datt dat wat gewise gëtt net koherent ass.",
 );
 
 /** Macedonian (Македонски)

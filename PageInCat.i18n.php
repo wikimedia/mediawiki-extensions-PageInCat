@@ -54,6 +54,15 @@ $messages['dsb'] = array(
 	'pageincat-very-wrong-warn' => "'''Warnowanje:''' {{PLURAL:$2|Kategorija $1 jo|Kategoriji $1 stej|Kategorije $1 su|Kategorije $1 su}} se pśez <code><nowiki>{{#incat:...}}</nowiki></code> wopak {{PLURAL:$2|spóznała|spóznałej|spóznali|spóznali}}, a togodla mógał pśeglěd wopak byś. Pśicyna mógła byś, až su se kategorije do wurazow <code><nowiki>{{#incat:...}}</nowiki></code> zapśimjeli, což mógło k inkonsistentnemu zwobraznjenjeju wjasć.",
 );
 
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'pageincat-desc' => 'Añade una función del analizador (parser), <code><nowiki>{{#incat:...}}</nowiki></code>, para determinar si la página actual está presente en una categoría especificada',
+	'pageincat-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detectó incorrectamente {{PLURAL:$2|la categoría $1|las categorías $1}}. Debido a esto, esta vista previa puede ser incorrecta. La versión guardada de esta página debería mostrarse correctamente.",
+	'pageincat-very-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detectó incorrectamente {{PLURAL:$2|la categoría $1|las categorías $1}}. Debido a esto, esta vista previa puede ser incorrecta. Esto pudo ser causado por incluir categorías dentro de sentencias <code><nowiki>{{#incat:...}}</nowiki></code>, y puede dar como resultado que no se muestre correctamente.",
+);
+
 /** French (Français)
  * @author Gomoko
  */
@@ -116,6 +125,15 @@ $messages['nl'] = array(
 	'pageincat-desc' => 'Voegt de parserfunctie <code><nowiki>{{#incat:...}}</nowiki></code> toe om te bepalen of de huidige pagina in een bepaalde categorie valt',
 	'pageincat-wrong-warn' => "'''Waarschuwing:''' De {{PLURAL:$2|categorie $1 is|categorieën $1 zijn}} onjuist gedetecteerd door <code><nowiki>{{#incat:...}}</nowiki></code>, en als gevolg daarvan kan deze voorvertoning onjuist zijn. De opgeslagen versie van deze pagina zou op de juiste manier weergegeven moeten worden.",
 	'pageincat-very-wrong-warn' => "'''Waarschuwing:''' De {{PLURAL:$2|categorie $1 is|categorieën $1 zijn}} onjuist gedetecteerd door <code><nowiki>{{#incat:...}}</nowiki></code>, en als gevolg daarvan kan deze voorvertoning onjuist zijn. Dit kan veroorzaakt worden door categorieën toe te voegen binnen <code><nowiki>{{#incat:...}}</nowiki></code> , en kan leiden tot inconsistente weergave.",
+);
+
+/** Polish (Polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'pageincat-desc' => 'Dodaje funkcję analizatora <code><nowiki>{{#incat:...}}</nowiki></code> ustalającą, czy bieżąca strona jest w określonej kategorii',
+	'pageincat-wrong-warn' => "'''Ostrzeżenie:'''  {{PLURAL:$2| kategoria $1 została nieprawidłowo wykryta|kategorie $1 zostały nieprawidłowo wykryte}} przez <code><nowiki>{{#incat:...}}</nowiki></code>, w wyniku czego podgląd może być niepoprawny. Zapisana wersja tej strony powinna być wyświetlona w odpowiedni sposób.",
+	'pageincat-very-wrong-warn' => "'''Ostrzeżenie:'''  {{PLURAL:$2| kategoria $1 została  nieprawidłowo wykryta|kategorie $1 zostały nieprawidłowo wykryte}} przez <code><nowiki>{{#incat:...}}</nowiki></code>, w wyniku czego podgląd może być niepoprawny. Może to być spowodowane przez dołączenie kategorii wewnątrz deklaracji <code><nowiki>{{#incat:...}}</nowiki></code> i może powodować niespójne wyświetlanie.",
 );
 
 /** Piedmontese (Piemontèis)

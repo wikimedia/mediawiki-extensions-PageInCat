@@ -67,7 +67,7 @@ class PageInCat {
 			}
 		}
 
-		$pageId = $page->getArticleId();
+		$pageId = $page->getArticleID();
 		if ( !$pageId ) {
 			// page hasn't yet been saved (preview)
 			// add to the cache list so the other hook

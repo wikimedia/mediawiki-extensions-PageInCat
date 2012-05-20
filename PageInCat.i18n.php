@@ -81,6 +81,15 @@ $messages['gl'] = array(
 	'pageincat-very-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detectou incorrectamente {{PLURAL:$2|a categoría $1|as categorías $1}}. Debido a isto, esta vista previa pode non ser correcta. Poida que incluíse categorías dentro de declaracións <code><nowiki>{{#incat:...}}</nowiki></code>, o que pode provocar que non se mostre correctamente.",
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'pageincat-desc' => 'הוספת פונקציית מפענח <code dir="ltr"><nowiki>{{#incat:...}}</nowiki></code> שמחליטה אם הדף הנוכחי שייך לקטגוריה הנתונה',
+	'pageincat-wrong-warn' => "'''אזהרה:''' {{PLURAL:\$2|הקטגוריה|הקטגוריות}} \$1 זוהו לא נכון על־ידי <code dir=\"ltr\"><nowiki>{{#incat:...}}</nowiki></code>, וכתוצאה מזה התצגוה המקדימה עשויה להיות שגויה. הגרסה השמורה של הדף הזה אמורה להיות מוצגת נכון.",
+	'pageincat-very-wrong-warn' => '\'\'\'אזהרה:\'\'\' {{PLURAL:$2|הקטגוריה|הקטגוריות}} $1 זוהו לא נכון על־ידי <code dir="ltr"><nowiki>{{#incat:...}}</nowiki></code>, וכתוצאה מזה התצגוה המקדימה עשויה להיות שגויה. ייתכן שזה קרה בגלל הכללת קטגוריות בתוך הצהרות <code dir="ltr"><nowiki>{{#incat:...}}</nowiki></code>, וזה יכול לגרום לתצוגה בלתי־עקיבה.',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -97,6 +106,13 @@ $messages['ia'] = array(
 	'pageincat-desc' => 'Adde al analysator syntactic un function <code><nowiki>{{#incat:...}}</nowiki></code> pro determinar si le pagina actual es in un categoria specificate',
 	'pageincat-wrong-warn' => "'''Attention:''' Le {{PLURAL:$2|categoria|categorias}} $1 esseva detegite incorrectemente per <code><nowiki>{{#incat:...}}</nowiki></code>, e como resultato, iste previsualisation pote esser incorrecte. Le version salveguardate de iste pagina deberea esser presentate in le maniera correcte.",
 	'pageincat-very-wrong-warn' => "'''Attention:''' Le {{PLURAL:$2|categoria|categorias}} $1 esseva detegite incorrectemente per <code><nowiki>{{#incat:...}}</nowiki></code>, e como resultato, iste previsualisation pote esser incorrecte. Isto pote esser causate per includer categorias intra commandos <code><nowiki>{{#incat:...}}</nowiki></code>, e pote resultar in un presentation inconsistente.",
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'pageincat-desc' => '現在のページが指定されたカテゴリーに属するか判定する、パーサー関数 <code><nowiki>{{#incat:...}}</nowiki></code> を追加する',
 );
 
 /** Luxembourgish (Lëtzebuergesch)

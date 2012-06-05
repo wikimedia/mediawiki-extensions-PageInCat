@@ -14,8 +14,11 @@ $messages['en'] = array(
 	'pageincat-very-wrong-warn' => '\'\'\'Warning:\'\'\' The {{PLURAL:$2|category $1 was|categories $1 were}} detected incorrectly by <code><nowiki>{{#incat:...}}</nowiki></code>, and as a result this preview may be incorrect. This can be caused by including categories inside of <code><nowiki>{{#incat:...}}</nowiki></code> statements, and may result in inconsistent display.',
 );
 
-/** Message documentation (Message documentation) */
+/** Message documentation (Message documentation)
+ * @author Beta16
+ */
 $messages['qqq'] = array(
+	'pageincat-desc' => '{{desc}}',
 	'pageincat-wrong-warn' => 'Warning displayed during preview when editing a page if #incat parser function acted incorrectly (Acting incorrectly means acting as if page was not in category, but page actually is). This can happen during preview, since the categories from the last saved revision are used instead of the categories specified in the page text. Once page is saved, the correct categories should be used. This error can also be caused by conditional category inclusion (<code><nowiki>{{#ifpageincat:Foo||[[category:Foo]]}}</nowiki></code>. See also {{msg-mw|pageincat-very-wrong-warn}}.
 
 *$1 is the list of categories (in a localized comma separated list with the last two items separated by {{msg-mw|and}}. The individual category names will be italicized).
@@ -106,6 +109,13 @@ $messages['ia'] = array(
 	'pageincat-desc' => 'Adde al analysator syntactic un function <code><nowiki>{{#incat:...}}</nowiki></code> pro determinar si le pagina actual es in un categoria specificate',
 	'pageincat-wrong-warn' => "'''Attention:''' Le {{PLURAL:$2|categoria|categorias}} $1 esseva detegite incorrectemente per <code><nowiki>{{#incat:...}}</nowiki></code>, e como resultato, iste previsualisation pote esser incorrecte. Le version salveguardate de iste pagina deberea esser presentate in le maniera correcte.",
 	'pageincat-very-wrong-warn' => "'''Attention:''' Le {{PLURAL:$2|categoria|categorias}} $1 esseva detegite incorrectemente per <code><nowiki>{{#incat:...}}</nowiki></code>, e como resultato, iste previsualisation pote esser incorrecte. Isto pote esser causate per includer categorias intra commandos <code><nowiki>{{#incat:...}}</nowiki></code>, e pote resultar in un presentation inconsistente.",
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'pageincat-desc' => 'Aggiunge la funzione parser <code><nowiki>{{#incat:...}}</nowiki></code> per determinare se la pagina corrente è in una determinata categoria',
 );
 
 /** Japanese (日本語)

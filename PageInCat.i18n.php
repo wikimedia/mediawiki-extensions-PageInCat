@@ -116,6 +116,8 @@ $messages['ia'] = array(
  */
 $messages['it'] = array(
 	'pageincat-desc' => 'Aggiunge la funzione parser <code><nowiki>{{#incat:...}}</nowiki></code> per determinare se la pagina corrente è in una determinata categoria',
+	'pageincat-wrong-warn' => "'''Attenzione:''' {{PLURAL:$2|la categoria $1 è stata rilevata|le categorie $1 sono state rilevate}} non correttamente da <code><nowiki>{{#incat:...}}</nowiki></code>, e questa anteprima potrebbe risultare errata. La versione salvata di questa pagina dovrebbe essere mostrata in maniera corretta.",
+	'pageincat-very-wrong-warn' => "'''Attenzione:''' {{PLURAL:$2|la categoria $1 è stata rilevata|le categorie $1 sono state rilevate}} non correttamente da <code><nowiki>{{#incat:...}}</nowiki></code>, e questa anteprima potrebbe risultare errata. Può essere causato dall'inclusione di categorie all'interno del codice <code><nowiki>{{#incat:...}}</nowiki></code>, e può produrre una visualizzazione inconsistente.",
 );
 
 /** Japanese (日本語)

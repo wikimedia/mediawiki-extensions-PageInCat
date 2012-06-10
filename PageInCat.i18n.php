@@ -124,7 +124,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'pageincat-desc' => '現在のページが指定されたカテゴリーに属するか判定する、パーサー関数 <code><nowiki>{{#incat:...}}</nowiki></code> を追加する',
+	'pageincat-desc' => '現在のページが指定したカテゴリに属するか判定する、パーサー関数 <code><nowiki>{{#incat:...}}</nowiki></code> を追加する',
 );
 
 /** Luxembourgish (Lëtzebuergesch)

@@ -57,7 +57,7 @@ $messages['dsb'] = array(
 	'pageincat-very-wrong-warn' => "'''Warnowanje:''' {{PLURAL:$2|Kategorija $1 jo|Kategoriji $1 stej|Kategorije $1 su|Kategorije $1 su}} se pśez <code><nowiki>{{#incat:...}}</nowiki></code> wopak {{PLURAL:$2|spóznała|spóznałej|spóznali|spóznali}}, a togodla mógał pśeglěd wopak byś. Pśicyna mógła byś, až su se kategorije do wurazow <code><nowiki>{{#incat:...}}</nowiki></code> zapśimjeli, což mógło k inkonsistentnemu zwobraznjenjeju wjasć.",
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -66,7 +66,7 @@ $messages['es'] = array(
 	'pageincat-very-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detectó incorrectamente {{PLURAL:$2|la categoría $1|las categorías $1}}. Debido a esto, esta vista previa puede ser incorrecta. Esto pudo ser causado por incluir categorías dentro de sentencias <code><nowiki>{{#incat:...}}</nowiki></code>, y puede dar como resultado que no se muestre correctamente.",
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  */
 $messages['fr'] = array(
@@ -102,7 +102,7 @@ $messages['hsb'] = array(
 	'pageincat-very-wrong-warn' => "'''Warnowanje:''' {{PLURAL:$2|Kategorija $1 je|Kategoriji $1 stej|Kategorije $1 su|Kategorije $1 su}} so přez <code><nowiki>{{#incat:...}}</nowiki></code> wopak {{PLURAL:$2|spóznała|spóznałoj|spóznali|spóznali}}, a tohodla móhł přehlad wopak być. Přičina móhła być, zo su so kategorije do wurazow <code><nowiki>{{#incat:...}}</nowiki></code> zapřijeli, štož móhło k inkonsistentnemu zwobraznjenju wjesć.",
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -136,7 +136,7 @@ $messages['lb'] = array(
 	'pageincat-very-wrong-warn' => "'''Opgepasst:''' D'{{PLURAL:$2|Kategorie $1 gouf|Kategorie(n) $1 goufen}} duerch <code>#incat:</code> falsch erkannt. Dofir kann dat wat hei drënner gewise gëtt falsch sinn. Dat kann doduer kommen datt Kategorien an d'Funktion <code><nowiki>{{#incat:...}}</nowiki></code> dragesat goufen an dat kann dozou féieren datt dat wat gewise gëtt net koherent ass.",
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -155,7 +155,7 @@ $messages['nl'] = array(
 	'pageincat-very-wrong-warn' => "'''Waarschuwing:''' De {{PLURAL:$2|categorie $1 is|categorieën $1 zijn}} onjuist gedetecteerd door <code><nowiki>{{#incat:...}}</nowiki></code>, en als gevolg daarvan kan deze voorvertoning onjuist zijn. Dit kan veroorzaakt worden door categorieën toe te voegen binnen <code><nowiki>{{#incat:...}}</nowiki></code> , en kan leiden tot inconsistente weergave.",
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(

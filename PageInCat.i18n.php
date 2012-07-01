@@ -29,7 +29,7 @@ $messages['qqq'] = array(
 *$2 is how many categories",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -48,7 +48,7 @@ $messages['de'] = array(
 	'pageincat-very-wrong-warn' => "'''Achtung:''' Die {{PLURAL:$2|Kategorie $1 wurde|Kategorien $1 wurden}} durch <code>#incat:</code> falsch erkannt. Deswegen könnte die Vorschau fehlerhaft sein. Dies kann durch die Angabe von Kategorien innerhalb der Funktionsangabe <code><nowiki>{{#incat:...}}</nowiki></code> verursacht werden und könnte daher zu einer inkonsistenten Anzeige führen.",
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -75,7 +75,7 @@ $messages['fr'] = array(
 	'pageincat-very-wrong-warn' => "'''Attention:''' {{PLURAL:$2|La catégorie $1a été mal détectée|Les catégories $1ont été mal détectées}} par <code><nowiki>{{#incat:...}}</nowiki></code>, et par conséquent cet aperçu peut être incorrect. Cela peut être causé par des catégories incluses à l'intérieur des déclarations <code><nowiki>{{#incat:...}}</nowiki></code>, et peut provoquer un affichage incohérent.",
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -93,7 +93,7 @@ $messages['he'] = array(
 	'pageincat-very-wrong-warn' => '\'\'\'אזהרה:\'\'\' {{PLURAL:$2|הקטגוריה|הקטגוריות}} $1 זוהו לא נכון על־ידי <code dir="ltr"><nowiki>{{#incat:...}}</nowiki></code>, וכתוצאה מזה התצגוה המקדימה עשויה להיות שגויה. ייתכן שזה קרה בגלל הכללת קטגוריות בתוך הצהרות <code dir="ltr"><nowiki>{{#incat:...}}</nowiki></code>, וזה יכול לגרום לתצוגה בלתי־עקיבה.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(

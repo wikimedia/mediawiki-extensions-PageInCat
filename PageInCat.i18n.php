@@ -174,3 +174,12 @@ $messages['pms'] = array(
 	'pageincat-very-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'é ne ëstàita|Le categorìe $1 a son nen ëstàite}} andividuà për da bin da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà costa previsualisassion a podrìa esse cioca. Sòn a peul esse causà da l'anclusion ëd le categorìe andrinta a l'istrussion <code><nowiki>{{#incat:...}}</nowiki></code>, e a peul arzulté an na visualisassion incoerenta.",
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'pageincat-desc' => 'Nagdaragdag ng isang tungkuling pambanghay na <code><nowiki>{{#incat:...}}</nowiki></code> upang malaman kung ang pangkasalukuyang pahina ay nasa loob ng isang tinukoy na kategorya',
+	'pageincat-wrong-warn' => "'''Babala:''' Ang {{PLURAL:$2|kategoryang $1 ay|mga kategoryang $1 ay}} na may kamaliang napansin ng <code><nowiki>{{#incat:...}}</nowiki></code>, at bilang isang resulta ang paunang tingin ay maaaring hindi tama. Ang nasagip na rebisyon ng pahinang ito ay dapat na maipakitang nasa tamang pamamaraan.",
+	'pageincat-very-wrong-warn' => "'''Babala:''' Hindi tama ang pagpansin ng <code><nowiki>{{#incat:...}}</nowiki></code> sa {{PLURAL:$2|kategoryang $1|mga kategoryang $1}}, at bilang isang resulta ang paunang tingin ay maaaring hindi tama. Maaari itong naidulot ng pagsasama ng mga kategorya sa loob ng mga pagpapahayag ng <code><nowiki>{{#incat:...}}</nowiki></code>, at maaaring magresulta sa pagbabagu-bago ng ipinapakita.",
+);
+

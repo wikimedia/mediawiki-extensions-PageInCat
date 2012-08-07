@@ -45,7 +45,7 @@ $messages['be-tarask'] = array(
 $messages['de'] = array(
 	'pageincat-desc' => 'Ergänzt die Funktion <code>#incat:</code> mit der ermittelt werden kann, ob sich die aktuelle Seite in einer angegebenen Kategorie befindet',
 	'pageincat-wrong-warn' => "'''Achtung:''' Die {{PLURAL:$2|Kategorie $1 wurde|Kategorien $1 wurden}} durch <code>#incat:</code> falsch erkannt. Deswegen könnte die Vorschau fehlerhaft sein. Die gespeicherte Version dieser Seite sollte korrekt angezeigt werden.",
-	'pageincat-very-wrong-warn' => "'''Achtung:''' Die {{PLURAL:$2|Kategorie $1 wurde|Kategorien $1 wurden}} durch <code>#incat:</code> falsch erkannt. Deswegen könnte die Vorschau fehlerhaft sein. Dies kann durch die Angabe von Kategorien innerhalb der Funktionsangabe <code><nowiki>{{#incat:...}}</nowiki></code> verursacht werden und könnte daher zu einer inkonsistenten Anzeige führen.",
+	'pageincat-very-wrong-warn' => "'''Achtung:''' Die {{PLURAL:$2|Kategorie $1 wurde|Kategorien $1 wurden}} durch <code>#incat:</code> falsch erkannt. Deswegen könnte die Vorschau fehlerhaft sein. Dies kann durch die Angabe von Kategorien innerhalb der Funktionsangabe <code><nowiki>{{#incat:…}}</nowiki></code> verursacht werden und könnte daher zu einer inkonsistenten Anzeige führen.",
 );
 
 /** Lower Sorbian (dolnoserbski)

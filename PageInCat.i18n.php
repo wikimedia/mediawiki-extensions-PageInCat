@@ -127,6 +127,13 @@ $messages['ja'] = array(
 	'pageincat-desc' => '現在のページが指定したカテゴリに属するか判定する、パーサー関数 <code><nowiki>{{#incat:...}}</nowiki></code> を追加する',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'pageincat-desc' => 'Brängk de Funxjuhn <code lang="en"><nowiki>{{#incat:…}}</nowiki></code> en et Wiki, di eruß fenge kann, of en Sigg en ene beschtemmpte Saachjrobb_es.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */

@@ -191,4 +191,3 @@ $messages['tl'] = array(
 	'pageincat-wrong-warn' => "'''Babala:''' Ang {{PLURAL:$2|kategoryang $1 ay|mga kategoryang $1 ay}} na may kamaliang napansin ng <code><nowiki>{{#incat:...}}</nowiki></code>, at bilang isang resulta ang paunang tingin ay maaaring hindi tama. Ang nasagip na rebisyon ng pahinang ito ay dapat na maipakitang nasa tamang pamamaraan.",
 	'pageincat-very-wrong-warn' => "'''Babala:''' Hindi tama ang pagpansin ng <code><nowiki>{{#incat:...}}</nowiki></code> sa {{PLURAL:$2|kategoryang $1|mga kategoryang $1}}, at bilang isang resulta ang paunang tingin ay maaaring hindi tama. Maaari itong naidulot ng pagsasama ng mga kategorya sa loob ng mga pagpapahayag ng <code><nowiki>{{#incat:...}}</nowiki></code>, at maaaring magresulta sa pagbabagu-bago ng ipinapakita.",
 );
-

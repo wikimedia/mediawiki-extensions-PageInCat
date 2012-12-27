@@ -66,6 +66,15 @@ $messages['es'] = array(
 	'pageincat-very-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detectó incorrectamente {{PLURAL:$2|la categoría $1|las categorías $1}}. Debido a esto, esta vista previa puede ser incorrecta. Esto pudo ser causado por incluir categorías dentro de sentencias <code><nowiki>{{#incat:...}}</nowiki></code>, y puede dar como resultado que no se muestre correctamente.",
 );
 
+/** Finnish (suomi)
+ * @author VezonThunder
+ */
+$messages['fi'] = array(
+	'pageincat-desc' => 'Lisää parserifunktion <code><nowiki>{{#incat:...}}</nowiki></code>, jolla voi määrittää, onko nykyinen sivu tietyssä luokassa',
+	'pageincat-wrong-warn' => "'''Varoitus:''' <code><nowiki>{{#incat:...}}</nowiki></code> tunnisti {{PLURAL:$2|luokan $1|luokat $1}} virheellisesti ja siten tämä esikatselu voi olla virheellinen. Tämän sivun tallennettu versio näytettäneen oikein.",
+	'pageincat-very-wrong-warn' => "'''Varoitus:''' <code><nowiki>{{#incat:...}}</nowiki></code> tunnisti {{PLURAL:$2|luokan $1|luokat $1}} virheellisesti ja siten tämä esikatselu voi olla virheellinen. Syynä voi olla luokkien sisällyttäminen <code><nowiki>{{#incat:...}}</nowiki></code>-lauseiden sisälle, mikä saattaa johtaa sivun esittämiseen epäyhtenäisesti.",
+);
+
 /** French (français)
  * @author Gomoko
  */

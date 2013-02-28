@@ -16,9 +16,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Beta16
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'pageincat-desc' => '{{desc}}',
+	'pageincat-desc' => '{{desc|name=Page In Cat|url=http://www.mediawiki.org/wiki/Extension:PageInCat}}',
 	'pageincat-wrong-warn' => 'Warning displayed during preview when editing a page if #incat parser function acted incorrectly (Acting incorrectly means acting as if page was not in category, but page actually is). This can happen during preview, since the categories from the last saved revision are used instead of the categories specified in the page text. Once page is saved, the correct categories should be used. This error can also be caused by conditional category inclusion (<code><nowiki>{{#ifpageincat:Foo||[[category:Foo]]}}</nowiki></code>. See also {{msg-mw|pageincat-very-wrong-warn}}.
 
 *$1 is the list of categories (in a localized comma separated list with the last two items separated by {{msg-mw|and}}. The individual category names will be italicized).

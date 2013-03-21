@@ -204,6 +204,13 @@ $messages['pms'] = array(
 	'pageincat-very-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'é ne ëstàita|Le categorìe $1 a son nen ëstàite}} andividuà për da bin da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà costa previsualisassion a podrìa esse cioca. Sòn a peul esse causà da l'anclusion ëd le categorìe andrinta a l'istrussion <code><nowiki>{{#incat:...}}</nowiki></code>, e a peul arzulté an na visualisassion incoerenta.",
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'pageincat-desc' => "Aggiunge 'na funzione analizzatrice <code><nowiki>{{#incat:...}}</nowiki></code> pe deteminà ce 'a pàgene de mò stè jndr'à 'na categorije specifiche",
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */

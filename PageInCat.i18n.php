@@ -30,6 +30,15 @@ $messages['qqq'] = array(
 *$2 is how many categories",
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'pageincat-desc' => "Amiesta una función d'analís <code><nowiki>{{#incat:...}}</nowiki></code>, pa determinar si la páxina actual ta n'una categoría especificada",
+	'pageincat-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> deteutó incorreutamente {{PLURAL:$2|la categoría|les categoríes}} $1 y, por eso, esta vista previa pue ser incorreuta. La versión guardada d'esta páxina tendría de vese de mou correutu.",
+	'pageincat-very-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detecto incorreutamente {{PLURAL:$2|la categoría|les categoríes}} $1 y, por eso, esta vista previa pue ser incorreuta. Esto pue asoceder por incluir categoríes dientro de les declaraciones <code><nowiki>{{#incat:...}}</nowiki></code>, lo que pue causar una visualización inconsistente.",
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */

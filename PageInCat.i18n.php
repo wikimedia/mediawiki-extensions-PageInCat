@@ -213,6 +213,24 @@ $messages['pms'] = array(
 	'pageincat-very-wrong-warn' => "'''Avis:''' {{PLURAL:$2|La categorìa $1 a l'é ne ëstàita|Le categorìe $1 a son nen ëstàite}} andividuà për da bin da <code><nowiki>{{#incat:...}}</nowiki></code>, e com arzultà costa previsualisassion a podrìa esse cioca. Sòn a peul esse causà da l'anclusion ëd le categorìe andrinta a l'istrussion <code><nowiki>{{#incat:...}}</nowiki></code>, e a peul arzulté an na visualisassion incoerenta.",
 );
 
+/** Portuguese (português)
+ * @author Cainamarques
+ */
+$messages['pt'] = array(
+	'pageincat-desc' => 'Adiciona uma função sintática <code><nowiki>{{#incat:...}}</nowiki></code> para determinar se a página actual está inserida numa determinada categoria',
+	'pageincat-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorrectamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, como resultado, esta previsão pode estar incorrecta. A versão salva desta página deverá ser exibida na forma correcta.",
+	'pageincat-very-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorrectamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, como resultado, esta previsão pode estar incorrecta. Isto pode ser causado pela inclusão de categorias na função <code><nowiki>{{#incat:...}}</nowiki></code> e pode resultar numa exibição inconsistente.",
+);
+
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'pageincat-desc' => 'Adiciona uma função sintática <code><nowiki>{{#incat:...}}</nowiki></code> para determinar se a página atual está inserida numa determinada categoria',
+	'pageincat-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorretamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, como resultado, esta previsão pode estar incorreta. A versão salva desta página deverá ser exibida na forma correta.",
+	'pageincat-very-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorretamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, como resultado, esta previsão pode estar incorreta. Isto pode ser causado pela inclusão de categorias na função <code><nowiki>{{#incat:...}}</nowiki></code> e pode resultar numa exibição inconsistente.",
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */

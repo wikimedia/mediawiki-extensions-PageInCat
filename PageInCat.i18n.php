@@ -216,11 +216,12 @@ $messages['pms'] = array(
 
 /** Portuguese (português)
  * @author Cainamarques
+ * @author Hamilton Abreu
  */
 $messages['pt'] = array(
 	'pageincat-desc' => 'Adiciona uma função sintática <code><nowiki>{{#incat:...}}</nowiki></code> para determinar se a página actual está inserida numa determinada categoria',
-	'pageincat-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorrectamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, como resultado, esta previsão pode estar incorrecta. A versão salva desta página deverá ser exibida na forma correcta.",
-	'pageincat-very-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorrectamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, como resultado, esta previsão pode estar incorrecta. Isto pode ser causado pela inclusão de categorias na função <code><nowiki>{{#incat:...}}</nowiki></code> e pode resultar numa exibição inconsistente.",
+	'pageincat-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorrectamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, em resultado, esta antevisão pode estar incorrecta. A versão gravada da página deve ser apresentada correctamente.",
+	'pageincat-very-wrong-warn' => "'''Atenção:''' {{PLURAL:$2|A categoria $1 foi detectada|As categorias $1 foram detectadas}} incorrectamente pela função <code><nowiki>{{#incat:...}}</nowiki></code> e, em resultado, esta antevisão pode estar incorrecta. Isto pode dever-se à inclusão de categorias na função <code><nowiki>{{#incat:...}}</nowiki></code> e pode resultar numa apresentação inconsistente.",
 );
 
 /** Brazilian Portuguese (português do Brasil)
@@ -239,6 +240,16 @@ $messages['roa-tara'] = array(
 	'pageincat-desc' => "Aggiunge 'na funzione analizzatrice <code><nowiki>{{#incat:...}}</nowiki></code> pe deteminà ce 'a pàgene de mò stè jndr'à 'na categorije specifiche",
 	'pageincat-wrong-warn' => "'''Attenziò:''' {{PLURAL:$2|'A categorije $1 ha state|le categorije $1 onne state}} acchiate ingorrette da <code><nowiki>{{#incat:...}}</nowiki></code>, e cumme 'nu resultate sta andeprime pò essere ingorrette. 'A versiona reggistrate de sta pàgene avessa essere fatte vedè jndr'à 'nu mode corrette.",
 	'pageincat-very-wrong-warn' => "'''Attenziò:''' {{PLURAL:$2|'A categorije $1 ha state|le categorije $1 onne state}} acchiate ingorrette da <code><nowiki>{{#incat:...}}</nowiki></code>, e cumme 'nu resultate sta andeprime pò essere ingorrette. Stu fatte pò essere causate da categorije 'ngluse jndr'à frase <code><nowiki>{{#incat:...}}</nowiki></code>, e pò resultà jndr'à 'na visualizzazzione inconsistende.",
+);
+
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'pageincat-desc' => 'Добавляет функцию <code><nowiki>{{#incat:…}}</nowiki></code>, чтобы определить, находится ли текущая страница в определённой категории',
+	'pageincat-wrong-warn' => "'''Предупреждение:''' {{PLURAL:$2|категория $1 была  определена|категории $1 были определены}} <code><nowiki>{{#incat:…}}</nowiki></code> неправильно, и в результате этот предварительный просмотр может быть неверными. Сохраненная версия этой страницы должна будет отображаться в правильном виде.",
+	'pageincat-very-wrong-warn' => "'''Предупреждение:''' {{PLURAL:$2|категория $1 была  определена|категории $1 были определены}} <code><nowiki>{{#incat:…}}</nowiki></code> неправильно, и в результате этот предварительный просмотр может быть неверными.
+Это может быть вызвано включением категорий внутрь выражений <code><nowiki>{{#incat:…}}</nowiki></code> и может привести к неправильному отображению.",
 );
 
 /** Tagalog (Tagalog)

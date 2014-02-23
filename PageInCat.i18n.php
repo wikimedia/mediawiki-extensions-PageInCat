@@ -77,6 +77,15 @@ $messages['es'] = array(
 	'pageincat-very-wrong-warn' => "'''Atención:''' <code><nowiki>{{#incat:...}}</nowiki></code> detectó incorrectamente {{PLURAL:$2|la categoría $1|las categorías $1}}. Debido a esto, esta vista previa puede ser incorrecta. Esto pudo ser causado por incluir categorías dentro de sentencias <code><nowiki>{{#incat:...}}</nowiki></code>, y puede dar como resultado que no se muestre correctamente.",
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'pageincat-desc' => 'افزودن یک تابع تجزیه‌کننده <code><nowiki>{{#incat:...}}</nowiki></code> برای تعیین اینکه صفحهٔ فعلی در یک دستهٔ مشخص شده‌است',
+	'pageincat-wrong-warn' => "'''هشدار''': {{PLURAL:$2|دستهٔ $1 بود|دسته‌های $1 بودند}} توسط <code><nowiki>{{#incat:...}}</nowiki></code> به طور نادرستی شناسایی شدند، و در نتیجه این پیش‌نمایش ممکن است نادرست باشد. نسخهٔ ذخیره شدهٔ این صفحه باید در شیوه‌ای درست نمایش داده‌ شود.",
+	'pageincat-very-wrong-warn' => "'''هشدار''': {{PLURAL:$2|دستهٔ $1 بود|دسته‌های $1 بودند}} توسط <code><nowiki>{{#incat:...}}</nowiki></code> به طور نادرستی شناسایی شدند، و در نتیجه این پیش‌نمایش ممکن است نادرست باشد. این می‌تواند در نتیجهٔ شامل شدن دسته‌ها درون <code><nowiki>{{#incat:...}}</nowiki></code> اظهارات باشد، و ممکن است منجر به نمایش متناقض شود.",
+);
+
 /** Finnish (suomi)
  * @author VezonThunder
  */

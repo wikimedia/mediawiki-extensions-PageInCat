@@ -5,12 +5,12 @@
  * @author Brian Wolff <bawolff+ext _at_ gmail _dot_ com>
  *
  * Copyright © Brian Wolff 2011.
- * 
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
  * of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -26,18 +26,18 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
-
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'PageInCat',
 	'descriptionmsg' => 'pageincat-desc',
-	'version' => 2,
+	'version' => '3.0.0',
 	'url' => 'https://mediawiki.org/wiki/Extension:PageInCat',
 	'author' => '[https://mediawiki.org/wiki/User:Bawolff Brian Wolff]',
 );
 
 $dir = dirname(__FILE__) . '/';
 
+$wgMessagesDirs['PageInCat'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PageInCat'] = $dir . 'PageInCat.i18n.php';
 $wgExtensionMessagesFiles['PageInCatMagic'] = $dir . 'PageInCat.i18n.magic.php';
 

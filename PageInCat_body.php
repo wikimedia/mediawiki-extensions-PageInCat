@@ -24,7 +24,7 @@ class PageInCat {
 
 	/**
 	 * Really hacky array for categories of page
-	 * that we are previewing. See onEditPageGetPreviewText
+	 * that we are previewing. See onEditPageGetPreviewContent
 	 * method. Each key is an md5sum of page text, and each key
 	 * is an array of categories
 	 */
@@ -244,10 +244,10 @@ class PageInCat {
 	 * @todo Find a non-ugly way of doing this (is that possible?)
 	 *
 	 * @param $editPage EditPage
-	 * @param $text String wikitext to be parsed
+	 * @param $content Content wikitext to be parsed
 	 * @return boolean true
 	 */
-	public static function onEditPageGetPreviewText( EditPage $editPage, $text ) {
+	public static function onEditPageGetPreviewContent( EditPage $editPage, $content ) {
 		global $wgPageInCatUseAccuratePreview;
 		if ( !$wgPageInCatUseAccuratePreview ) {
 			return true; // disable this hacky mess ;)
@@ -268,7 +268,8 @@ class PageInCat {
 		$parserOptions->enableLimitReport();
 
 		// I suppose I should be using $editPage->getTitle() but that's new in 1.19
-		$toparse = $wgParser->preSaveTransform( $text, $editPage->mTitle, $curUser, $parserOptions );
+		$toparse = $wgParser->preSaveTransform(
+			ContentHandler::getContentText( $content ), $editPage->mTitle, $curUser, $parserOptions );
 		$hash = md5( $toparse, true );
 		$parserOutput = $wgParser->parse( $toparse, $editPage->mTitle, $parserOptions );
 
@@ -287,7 +288,7 @@ class PageInCat {
 	/**
 	 * Insert categories from previous pre-preview parse into parser.
 	 *
-	 * See onEditPageGetPreviewText. This is rather fragile/scary.
+	 * See onEditPageGetPreviewContent. This is rather fragile/scary.
 	 * If anyone has a suggestion for how to do this better, please let me know.
 	 *
 	 * @param $parser Parser

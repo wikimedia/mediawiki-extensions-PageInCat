@@ -30,8 +30,8 @@
 		"ParserAfterTidy": [
 			"PageInCat::onParserAfterTidy"
 		],
-		"EditPageGetPreviewText": [
-			"PageInCat::onEditPageGetPreviewText"
+		"EditPageGetPreviewContent": [
+			"PageInCat::onEditPageGetPreviewContent"
 		],
 		"ParserBeforeInternalParse": [
 			"PageInCat::onParserBeforeInternalParse"

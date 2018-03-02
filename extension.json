@@ -2,7 +2,7 @@
 	"name": "PageInCat",
 	"version": "3.0.0",
 	"author": "[https://mediawiki.org/wiki/User:Bawolff Brian Wolff]",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:PageInCat",
 	"descriptionmsg": "pageincat-desc",
 	"type": "parserhook",

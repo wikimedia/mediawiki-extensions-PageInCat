@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"pageincat-desc": "添加解析函式 <code><nowiki>{{#incat:...}}</nowiki></code> 來確定目前的頁面是否在特定分類裡",
+	"pageincat-wrong-warn": "'''警告：'''由 <code><nowiki>{{#incat:...}}</nowiki></code> 偵測出分類{{PLURAL:$2|$1|$1}}有誤，而預覽內容也會不正確。此儲存版本的頁面應以正確形式顯示。",
+	"pageincat-very-wrong-warn": "'''警告：'''由 <code><nowiki>{{#incat:...}}</nowiki></code> 偵測出分類{{PLURAL:$2|$1|$1}}有誤，而預覽內容也會不正確。這會因將分類包含在 <code><nowiki>{{#incat:...}}</nowiki></code> 陳述裡所造成，而讓顯示結果不一致。"
+}

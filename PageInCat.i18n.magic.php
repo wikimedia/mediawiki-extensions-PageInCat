@@ -1,6 +1,6 @@
 <?php
-$magicWords = array();
+$magicWords = [];
 
-$magicWords['en'] = array(
-	'pageincat' => array( 0, 'incat', 'ifpageincat', 'incategory', 'ifpageincategory' ),
-);
+$magicWords['en'] = [
+	'pageincat' => [ 0, 'incat', 'ifpageincat', 'incategory', 'ifpageincategory' ],
+];

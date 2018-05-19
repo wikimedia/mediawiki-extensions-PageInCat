@@ -28,7 +28,7 @@ class PageInCat {
 	 * method. Each key is an md5sum of page text, and each key
 	 * is an array of categories
 	 */
-	public static $categoriesForPreview = array();
+	public static $categoriesForPreview = [];
 
 	/**
 	 * Register the parser hook.
@@ -77,7 +77,7 @@ class PageInCat {
 		$catDBkey = $catTitle->getDBkey();
 
 		if ( !isset( $parser->pageInCat_cache ) ) {
-			$parser->pageInCat_cache = array();
+			$parser->pageInCat_cache = [];
 		} else {
 			if ( isset( $parser->pageInCat_cache[$catDBkey] ) ) {
 				# been there done that, return cached value
@@ -129,10 +129,10 @@ class PageInCat {
 		$res = $dbr->selectField(
 			'categorylinks',
 			'cl_from',
-			array(
+			[
 				'cl_to' => $catDBkey,
 				'cl_from' => $pageId,
-			),
+			],
 			__METHOD__
 		);
 		return $res !== false;
@@ -152,7 +152,7 @@ class PageInCat {
 	 * @param $parser Parser
 	 */
 	public static function onClearState( Parser $parser ) {
-		$parser->pageInCat_cache = array();
+		$parser->pageInCat_cache = [];
 		$parser->pageInCat_onlyCache = false;
 		return true;
 	}
@@ -181,7 +181,7 @@ class PageInCat {
 		}
 
 		$actualCategories = $parser->getOutput()->getCategories();
-		$wrongCategories = array();
+		$wrongCategories = [];
 
 		foreach ( $parser->pageInCat_cache as $catName => $catIncluded ) {
 			# A little hacky, but I want the cat names italicized.
@@ -279,7 +279,7 @@ class PageInCat {
 			# and delete the sole element. But good to be paranoid,
 			# especially given how fragile this solution is.
 			wfDebug( __METHOD__ . ' self::$categoriesForPreview grew too big.' );
-			self::$categoriesForPreview = array();
+			self::$categoriesForPreview = [];
 		}
 		self::$categoriesForPreview[$hash] = $parserOutput->getCategoryLinks();
 		return true;
@@ -318,11 +318,11 @@ class PageInCat {
 		}
 
 		if ( !isset( $parser->pageInCat_cache ) ) {
-			$parser->pageInCat_cache = array();
+			$parser->pageInCat_cache = [];
 		} elseif ( count( $parser->pageInCat_cache ) !== 0 ) {
 			# being paranoid
 			wfDebug( __METHOD__ . ' $parser->pageInCat_cache not empty!' );
-			$parser->pageInCat_cache = array();
+			$parser->pageInCat_cache = [];
 		}
 
 		foreach ( self::$categoriesForPreview[$hash] as $catName ) {

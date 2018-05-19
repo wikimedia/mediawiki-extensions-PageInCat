@@ -173,8 +173,7 @@ class PageInCat {
 		if (
 			!isset( $parser->pageInCat_cache ) ||
 			!$parser->getOptions()->getIsPreview()
-		)
-		{
+		) {
 			# page in cat extension not even used
 			# or this is not a preview.
 			return true;

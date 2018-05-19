@@ -166,7 +166,7 @@ class PageInCat {
 	 *
 	 * @param $parser Parser
 	 * @param $text String the resultant html (unused)
-	 * @return boolean true
+	 * @return bool true
 	 */
 	public static function onParserAfterTidy( Parser $parser, $text ) {
 		global $wgLang;
@@ -245,7 +245,7 @@ class PageInCat {
 	 *
 	 * @param $editPage EditPage
 	 * @param $content Content wikitext to be parsed
-	 * @return boolean true
+	 * @return bool true
 	 */
 	public static function onEditPageGetPreviewContent( EditPage $editPage, $content ) {
 		global $wgPageInCatUseAccuratePreview;
@@ -295,7 +295,7 @@ class PageInCat {
 	 * @param $pstText String text to parse, all pst'd. In theory untouched but
 	 *    various hooks could have touched it, which would make this all fail.
 	 * @param $stripState StripState $parser->mStripState - I really don't need this
-	 * @return boolean true
+	 * @return bool true
 	 */
 	public static function onParserBeforeInternalParse( Parser $parser, $pstText, $stripState ) {
 		global $wgPageInCatUseAccuratePreview;

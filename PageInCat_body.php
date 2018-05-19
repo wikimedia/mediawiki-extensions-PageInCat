@@ -123,7 +123,7 @@ class PageInCat {
 	 * @return boolean if the current page belongs to the category.
 	 */
 	private static function inCatCheckDb( $pageId, $catDBkey ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		// This will be false if page not in cat
 		// Since 0 rows returned in that case.
 		$res = $dbr->selectField(

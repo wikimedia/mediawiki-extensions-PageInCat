@@ -47,6 +47,7 @@ class PageInCat {
 		$catText = isset( $args[0] ) ? trim( $frame->expand( $args[0] ) ) : '';
 
 		// Must specify that content varies with what gets inserted in db on save.
+		// FIXME May or may not work after 1846e2dc15e957c55
 		$parser->getOutput()->setFlag( 'vary-revision' );
 
 		if ( self::inCat( $parser->getTitle(), $catText, $parser ) ) {
@@ -258,9 +259,7 @@ class PageInCat {
 		# This is copied from EditPage.php
 		# Most of these options don't matter, but thought I'd make it as close to
 		# EditPage.php as possible
-		$parserOptions = ParserOptions::newFromUser( $curUser );
-		$parserOptions->setEditSection( false );
-		$parserOptions->setTidy( true );
+		$parserOptions = $editPage->getArticle()->getPage()->makeParserOptions( $editPage->getContext() );
 		# Don't set as preview so other hook isn't triggered (Talk about being hacky!)
 		# $parserOptions->setIsPreview( true );
 		# $parserOptions->setIsSectionPreview( !is_null($editPage->section) && $editPage->section !== '' );
@@ -268,7 +267,7 @@ class PageInCat {
 
 		// I suppose I should be using $editPage->getTitle() but that's new in 1.19
 		$toparse = $wgParser->preSaveTransform(
-			ContentHandler::getContentText( $content ), $editPage->mTitle, $curUser, $parserOptions );
+			ContentHandler::getContentText( $content ), $editPage->getTitle(), $curUser, $parserOptions );
 		$hash = md5( $toparse, true );
 		$parserOutput = $wgParser->parse( $toparse, $editPage->mTitle, $parserOptions );
 

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"pageincat-desc": "Geçerli sayfanın belirtilen bir kategoride olup olmadığını belirlemek için <code><nowiki>{{#incat:...}}</nowiki></code> ayrıştırıcı işlev ekler",
+	"pageincat-wrong-warn": "'''Uyarı:''' {{PLURAL:$2|$1 kategori|$1 kategori}}, <code><nowiki>{{#incat:...}}</nowiki></code> tarafından yanlış algılandı ve sonuç olarak bu önizleme yanlış olabilir. Bu sayfanın kaydedilmiş versiyonu doğru şekilde gösterilmelidir.",
+	"pageincat-very-wrong-warn": "'''Uyarı:''' {{PLURAL:$2|$1 kategori|$1 kategori}}, <code><nowiki>{{#incat:...}}</nowiki></code> tarafından yanlış algılandı ve sonuç olarak bu önizleme yanlış olabilir. Bu, <code><nowiki>{{#incat:...}}</nowiki></code> ifadelerinin içine kategoriler eklenmesi nedeniyle ortaya çıkabilir ve tutarsız göstergelere neden olabilir."
+}

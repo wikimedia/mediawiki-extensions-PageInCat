@@ -62,7 +62,7 @@ class PageInCat {
 	 * @param $page Title current page
 	 * @param $category String category to check (not a title object!)
 	 * @param $parser Parser
-	 * @return boolean If $page is a member of $category
+	 * @return bool If $page is a member of $category
 	 */
 	private static function inCat( Title $page, $category, Parser $parser ) {
 		if ( $category === '' ) {
@@ -121,7 +121,7 @@ class PageInCat {
 	 * Actually check it in DB.
 	 * @param $pageId int page_id of current page (Already verified to not be 0)
 	 * @param $catDBkey String the db key of category we're checking.
-	 * @return boolean if the current page belongs to the category.
+	 * @return bool if the current page belongs to the category.
 	 */
 	private static function inCatCheckDb( $pageId, $catDBkey ) {
 		$dbr = wfGetDB( DB_REPLICA );

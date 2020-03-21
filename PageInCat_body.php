@@ -20,6 +20,9 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
+
+use MediaWiki\MediaWikiServices;
+
 class PageInCat {
 
 	/**
@@ -253,7 +256,7 @@ class PageInCat {
 			return true; // disable this hacky mess ;)
 		}
 
-		global $wgParser; // we are not parsing anything yet, so should be safe.
+		$parser = MediaWikiServices::getInstance()->getParser(); // we are not parsing anything yet, so should be safe.
 		$curUser = RequestContext::getMain()->getUser(); // aka $wgUser in disguise
 
 		# This is copied from EditPage.php
@@ -266,10 +269,10 @@ class PageInCat {
 		$parserOptions->enableLimitReport();
 
 		// I suppose I should be using $editPage->getTitle() but that's new in 1.19
-		$toparse = $wgParser->preSaveTransform(
+		$toparse = $parser->preSaveTransform(
 			ContentHandler::getContentText( $content ), $editPage->getTitle(), $curUser, $parserOptions );
 		$hash = md5( $toparse, true );
-		$parserOutput = $wgParser->parse( $toparse, $editPage->mTitle, $parserOptions );
+		$parserOutput = $parser->parse( $toparse, $editPage->mTitle, $parserOptions );
 
 		if ( count( self::$categoriesForPreview ) > 10 ) {
 			# Really this should never have more than 1 element

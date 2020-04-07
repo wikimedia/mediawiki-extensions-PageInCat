@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"pageincat-desc": "Engade unha función analítica, <code><nowiki>{{#incat:...}}</nowiki></code>, para determinar se a páxina actual está presente nunha categoría especificada",

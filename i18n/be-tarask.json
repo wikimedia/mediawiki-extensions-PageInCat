@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wizardist",
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Wizardist"
 		]
 	},
 	"pageincat-desc": "Дадае функцыю парсэра <code><nowiki>{{#incat:...}}</nowiki></code> для вызначэньня прыналежнасьці бягучай старонкі да пэўнай катэгорыі",

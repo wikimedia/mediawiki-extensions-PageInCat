@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"아라",
-			"Ykhwong"
+			"Ykhwong",
+			"아라"
 		]
 	},
 	"pageincat-desc": "현재 문서가 특정 분류에 있는지 확인하는 <code><nowiki>{{#incat:...}}</nowiki></code> 파서 함수 추가",

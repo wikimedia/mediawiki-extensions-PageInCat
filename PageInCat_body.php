@@ -35,7 +35,8 @@ class PageInCat {
 
 	/**
 	 * Register the parser hook.
-	 * @param $parser Parser
+	 * @param Parser $parser
+	 * @return true
 	 */
 	public static function register( Parser $parser ) {
 		$parser->setFunctionHook( 'pageincat', 'PageInCat::render', Parser::SFH_OBJECT_ARGS );
@@ -45,6 +46,10 @@ class PageInCat {
 	/**
 	 * Check if in category.
 	 * Based on #if from ParserFunctions extension.
+	 * @param Parser $parser
+	 * @param PPFrame $frame
+	 * @param array $args
+	 * @return string
 	 */
 	public static function render( $parser, $frame, $args ) {
 		$catText = isset( $args[0] ) ? trim( $frame->expand( $args[0] ) ) : '';
@@ -62,9 +67,9 @@ class PageInCat {
 
 	/**
 	 * Check if $page belongs to $category
-	 * @param $page Title current page
-	 * @param $category String category to check (not a title object!)
-	 * @param $parser Parser
+	 * @param Title $page current page
+	 * @param string $category category to check (not a title object!)
+	 * @param Parser $parser
 	 * @return bool If $page is a member of $category
 	 */
 	private static function inCat( Title $page, $category, Parser $parser ) {
@@ -122,8 +127,8 @@ class PageInCat {
 
 	/**
 	 * Actually check it in DB.
-	 * @param $pageId int page_id of current page (Already verified to not be 0)
-	 * @param $catDBkey String the db key of category we're checking.
+	 * @param int $pageId page_id of current page (Already verified to not be 0)
+	 * @param string $catDBkey the db key of category we're checking.
 	 * @return bool if the current page belongs to the category.
 	 */
 	private static function inCatCheckDb( $pageId, $catDBkey ) {
@@ -153,7 +158,8 @@ class PageInCat {
 	 * for MW to parse something, save the result, then parse the same thing
 	 * again in same run (doesn't happen currently, but doesn't seem unimaginable
 	 * that it could).
-	 * @param $parser Parser
+	 * @param Parser $parser
+	 * @return true
 	 */
 	public static function onClearState( Parser $parser ) {
 		$parser->pageInCat_cache = [];
@@ -168,8 +174,8 @@ class PageInCat {
 	 * and display a warning if they don't. Using ParserAfterTidy since it
 	 * runs so late in parse process.
 	 *
-	 * @param $parser Parser
-	 * @param $text String the resultant html (unused)
+	 * @param Parser $parser
+	 * @param string $text the resultant html (unused)
 	 * @return bool true
 	 */
 	public static function onParserAfterTidy( Parser $parser, $text ) {
@@ -246,8 +252,8 @@ class PageInCat {
 	 *
 	 * @todo Find a non-ugly way of doing this (is that possible?)
 	 *
-	 * @param $editPage EditPage
-	 * @param $content Content wikitext to be parsed
+	 * @param EditPage $editPage
+	 * @param Content $content wikitext to be parsed
 	 * @return bool true
 	 */
 	public static function onEditPageGetPreviewContent( EditPage $editPage, $content ) {
@@ -292,10 +298,10 @@ class PageInCat {
 	 * See onEditPageGetPreviewContent. This is rather fragile/scary.
 	 * If anyone has a suggestion for how to do this better, please let me know.
 	 *
-	 * @param $parser Parser
-	 * @param $pstText String text to parse, all pst'd. In theory untouched but
+	 * @param Parser $parser
+	 * @param string $pstText text to parse, all pst'd. In theory untouched but
 	 *    various hooks could have touched it, which would make this all fail.
-	 * @param $stripState StripState $parser->mStripState - I really don't need this
+	 * @param StripState $stripState $parser->mStripState - I really don't need this
 	 * @return bool true
 	 */
 	public static function onParserBeforeInternalParse( Parser $parser, $pstText, $stripState ) {

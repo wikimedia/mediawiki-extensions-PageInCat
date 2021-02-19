@@ -301,7 +301,7 @@ class PageInCat {
 	 * @param Parser $parser
 	 * @param string $pstText text to parse, all pst'd. In theory untouched but
 	 *    various hooks could have touched it, which would make this all fail.
-	 * @param StripState $stripState $parser->mStripState - I really don't need this
+	 * @param StripState $stripState I really don't need this
 	 * @return bool true
 	 */
 	public static function onParserBeforeInternalParse( Parser $parser, $pstText, $stripState ) {

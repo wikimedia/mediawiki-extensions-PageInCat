@@ -288,7 +288,7 @@ class PageInCat {
 			wfDebug( __METHOD__ . ' self::$categoriesForPreview grew too big.' );
 			self::$categoriesForPreview = [];
 		}
-		self::$categoriesForPreview[$hash] = $parserOutput->getCategoryLinks();
+		self::$categoriesForPreview[$hash] = $parserOutput->getCategoryNames();
 		return true;
 	}
 

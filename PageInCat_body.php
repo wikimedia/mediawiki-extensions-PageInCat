@@ -22,6 +22,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\ParserOutputFlags;
 
 class PageInCat {
 
@@ -56,7 +57,7 @@ class PageInCat {
 
 		// Must specify that content varies with what gets inserted in db on save.
 		// FIXME May or may not work after 1846e2dc15e957c55
-		$parser->getOutput()->setFlag( 'vary-revision' );
+		$parser->getOutput()->setOutputFlag( ParserOutputFlags::VARY_REVISION );
 
 		if ( self::inCat( $parser->getTitle(), $catText, $parser ) ) {
 			return isset( $args[1] ) ? trim( $frame->expand( $args[1] ) ) : '';

@@ -30,12 +30,15 @@ class PageInCat {
 	 * Really hacky array for categories of page
 	 * that we are previewing. See onEditPageGetPreviewContent
 	 * method. Each key is an md5sum of page text, and each key
-	 * is an array of categories
+	 * is an array of categories.
+	 *
+	 * @var array
 	 */
 	public static $categoriesForPreview = [];
 
 	/**
 	 * Register the parser hook.
+	 *
 	 * @param Parser $parser
 	 * @return true
 	 */
@@ -47,6 +50,7 @@ class PageInCat {
 	/**
 	 * Check if in category.
 	 * Based on #if from ParserFunctions extension.
+	 *
 	 * @param Parser $parser
 	 * @param PPFrame $frame
 	 * @param array $args
@@ -67,7 +71,8 @@ class PageInCat {
 	}
 
 	/**
-	 * Check if $page belongs to $category
+	 * Check if $page belongs to $category.
+	 *
 	 * @param Title $page current page
 	 * @param string $category category to check (not a title object!)
 	 * @param Parser $parser
@@ -120,7 +125,8 @@ class PageInCat {
 		if ( self::inCatCheckDb( $pageId, $catDBkey ) ) {
 			$parser->pageInCat_cache[$catDBkey] = true;
 			return true;
-		} /* else if false */
+		}
+		/* else if false */
 
 		$parser->pageInCat_cache[$catDBkey] = false;
 		return false;
@@ -128,6 +134,7 @@ class PageInCat {
 
 	/**
 	 * Actually check it in DB.
+	 *
 	 * @param int $pageId page_id of current page (Already verified to not be 0)
 	 * @param string $catDBkey the db key of category we're checking.
 	 * @return bool if the current page belongs to the category.
@@ -159,6 +166,7 @@ class PageInCat {
 	 * for MW to parse something, save the result, then parse the same thing
 	 * again in same run (doesn't happen currently, but doesn't seem unimaginable
 	 * that it could).
+	 *
 	 * @param Parser $parser
 	 * @return true
 	 */
@@ -202,7 +210,8 @@ class PageInCat {
 				} else {
 					$wrongCategories[$catNameDisplay] = true;
 				}
-			} else { # Should not be included
+			} else {
+				# Should not be included
 				if ( isset( $actualCategories[$catName] ) ) {
 					$wrongCategories[$catNameDisplay] = true;
 				} else {
@@ -258,11 +267,14 @@ class PageInCat {
 	public static function onEditPageGetPreviewContent( EditPage $editPage, $content ) {
 		global $wgPageInCatUseAccuratePreview;
 		if ( !$wgPageInCatUseAccuratePreview ) {
-			return true; // disable this hacky mess ;)
+			// disable this hacky mess ;)
+			return true;
 		}
 
-		$parser = MediaWikiServices::getInstance()->getParser(); // we are not parsing anything yet, so should be safe.
-		$curUser = RequestContext::getMain()->getUser(); // aka $wgUser in disguise
+		// we are not parsing anything yet, so should be safe.
+		$parser = MediaWikiServices::getInstance()->getParser();
+		// aka $wgUser in disguise
+		$curUser = RequestContext::getMain()->getUser();
 
 		# This is copied from EditPage.php
 		# Most of these options don't matter, but thought I'd make it as close to

@@ -21,7 +21,7 @@
 		"PageInCatMagic": "PageInCat.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-		"PageInCat": "PageInCat_body.php"
+		"PageInCat": "src/PageInCat.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [

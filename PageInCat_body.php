@@ -180,7 +180,6 @@ class PageInCat {
 	 * @return bool true
 	 */
 	public static function onParserAfterTidy( Parser $parser, $text ) {
-		global $wgLang;
 		if (
 			!isset( $parser->pageInCat_cache ) ||
 			!$parser->getOptions()->getIsPreview()
@@ -230,12 +229,11 @@ class PageInCat {
 				$msgName = 'pageincat-wrong-warn';
 			}
 
-			$msg = wfMessage( $msgName )
-				->params( $wgLang->listToText( $catList ) )
-				->numParams( count( $catList ) )
-				->text();
-
-			$parser->getOutput()->addWarning( $msg );
+			$parser->getOutput()->addWarningMsg(
+				$msgName,
+				Message::listParam( $catList, 'comma' ),
+				Message::numParam( count( $catList ) )
+			);
 		}
 
 		return true;

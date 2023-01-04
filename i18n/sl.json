@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"pageincat-desc": "Doda funkcijo razčlenjevalnika< nowiki><code>{{#incat:...}}</code></nowiki>, da ugotovite, ali je trenutna stran v določeni kategoriji",
+	"pageincat-wrong-warn": "'''Opozorilo:''' <code><nowiki>{{#incat:...}}</nowiki></code> je nepravilno zaznal {{PLURAL:$2|kategorijo $1|kategoriji $1|kategorije $1}}, zaradi česar je lahko ta predogled napačen. Shranjena različica te strani bi morala biti prikazana pravilno.",
+	"pageincat-very-wrong-warn": "'''Opozorilo:''' <code><nowiki>{{#incat:...}}</nowiki></code> je nepravilno zaznal {{PLURAL:$2|kategorijo $1|kategoriji $1|kategorije $1}}, zaradi česar je lahko ta predogled napačen. To je lahko posledica vključitve kategorij v izjave <code><nowiki>{{#incat:...}}</nowiki></code> in lahko povzroči nekonsistenten prikaz."
+}

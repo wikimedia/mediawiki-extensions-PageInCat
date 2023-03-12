@@ -289,7 +289,7 @@ class PageInCat {
 		$toparse = $parser->preSaveTransform(
 			ContentHandler::getContentText( $content ), $editPage->getTitle(), $curUser, $parserOptions );
 		$hash = md5( $toparse, true );
-		$parserOutput = $parser->parse( $toparse, $editPage->mTitle, $parserOptions );
+		$parserOutput = $parser->parse( $toparse, $editPage->getTitle(), $parserOptions );
 
 		if ( count( self::$categoriesForPreview ) > 10 ) {
 			# Really this should never have more than 1 element

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"pageincat-wrong-warn": "'''Įspėjimas:''' {{PLURAL:$2|kategorija $1 buvo aptikta|kategorijos $1 buvo aptiktos}} neteisingai <code><nowiki>{{#incat:...}}</nowiki></code> ir dėl to ši peržiūra gali būti neteisinga. Išsaugota šio puislapio versija turėtų būti atvaizduojama teisingai.",
+	"pageincat-very-wrong-warn": "'''Įspėjimas:''' {{PLURAL:$2|kategorija $1 buvo aptikta|kategorijos $1 buvo aptiktos}} neteisingai <code><nowiki>{{#incat:...}}</nowiki></code> ir dėl to ši peržiūra gali būti neteisinga. Tai gali nutikti dėl kategorijų įtraukimo į <code><nowiki>{{#incat:...}}</nowiki></code> teiginius ir tai gali lemti nekorektišką atvaizdavimą."
+}

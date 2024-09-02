@@ -140,7 +140,7 @@ class PageInCat {
 	 * @return bool if the current page belongs to the category.
 	 */
 	private static function inCatCheckDb( $pageId, $catDBkey ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getConnectionProvider()->getReplicaDatabase();
 		// This will be false if page not in cat
 		// Since 0 rows returned in that case.
 		$res = $dbr->selectField(
@@ -197,7 +197,7 @@ class PageInCat {
 			return true;
 		}
 
-		$actualCategories = $parser->getOutput()->getCategories();
+		$actualCategories = array_flip( $parser->getOutput()->getCategoryNames() );
 		$wrongCategories = [];
 
 		foreach ( $parser->pageInCat_cache as $catName => $catIncluded ) {
@@ -286,8 +286,9 @@ class PageInCat {
 		$parserOptions->enableLimitReport();
 
 		// I suppose I should be using $editPage->getTitle() but that's new in 1.19
+		$contentText = $content instanceof TextContent ? $content->getText() : '';
 		$toparse = $parser->preSaveTransform(
-			ContentHandler::getContentText( $content ), $editPage->getTitle(), $curUser, $parserOptions );
+			$contentText, $editPage->getTitle(), $curUser, $parserOptions );
 		$hash = md5( $toparse, true );
 		$parserOutput = $parser->parse( $toparse, $editPage->getTitle(), $parserOptions );
 

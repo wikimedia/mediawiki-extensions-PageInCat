@@ -285,7 +285,6 @@ class PageInCat {
 		# $parserOptions->setIsSectionPreview( !is_null($editPage->section) && $editPage->section !== '' );
 		$parserOptions->enableLimitReport();
 
-		// I suppose I should be using $editPage->getTitle() but that's new in 1.19
 		$contentText = $content instanceof TextContent ? $content->getText() : '';
 		$toparse = $parser->preSaveTransform(
 			$contentText, $editPage->getTitle(), $curUser, $parserOptions );

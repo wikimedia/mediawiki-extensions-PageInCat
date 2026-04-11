@@ -146,13 +146,16 @@ class PageInCat {
 		// This will be false if page not in cat
 		// Since 0 rows returned in that case.
 		$res = $dbr->selectField(
-			'categorylinks',
+			[ 'categorylinks', 'linktarget' ],
 			'cl_from',
 			[
-				'cl_to' => $catDBkey,
+				'lt_title' => $catDBkey,
+				'lt_namespace' => NS_CATEGORY,
 				'cl_from' => $pageId,
 			],
-			__METHOD__
+			__METHOD__,
+			[],
+			[ 'linktarget' => [ 'INNER JOIN', 'cl_target_id = lt_id' ] ]
 		);
 		return $res !== false;
 	}

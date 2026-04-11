@@ -1,6 +1,6 @@
 {
 	"name": "PageInCat",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"author": "[https://mediawiki.org/wiki/User:Bawolff Brian Wolff]",
 	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:PageInCat",
@@ -12,7 +12,7 @@
 		]
 	},
 	"requires": {
-		"MediaWiki": ">= 1.38.0"
+		"MediaWiki": ">= 1.45.0"
 	},
 	"config": {
 		"PageInCatUseAccuratePreview": true

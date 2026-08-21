@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"pageincat-desc": "Pridáva funkciu syntaktického analyzátora <code><nowiki>{{#incat:...}}</nowiki></code> na zistenie, či je aktuálna stránka v zadanej kategórii",
+	"pageincat-wrong-warn": "'''Upozornenie:''' {{PLURAL:$2|Kategória $1 bola zistená nesprávne|Kategórie $1 boli zistené nesprávne}} funkciou <code><nowiki>{{#incat:...}}</nowiki></code>, a preto môže byť tento náhľad nesprávny. Uložená verzia tejto stránky by sa mala zobraziť správne.",
+	"pageincat-very-wrong-warn": "'''Upozornenie:''' {{PLURAL:$2|Kategória $1 bola zistená nesprávne|Kategórie $1 boli zistené nesprávne}} funkciou <code><nowiki>{{#incat:...}}</nowiki></code>, a preto môže byť tento náhľad nesprávny. Môže to spôsobovať vkladanie kategórií do príkazov <code><nowiki>{{#incat:...}}</nowiki></code>, čo môže viesť k nekonzistentnému zobrazeniu."
+}
